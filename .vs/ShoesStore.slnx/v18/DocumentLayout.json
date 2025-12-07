@@ -1,0 +1,431 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|c:\\users\\gilma\\source\\repos\\shoesstore\\shoesstore\\productwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|solutionrelative:shoesstore\\productwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|C:\\Users\\gilma\\source\\repos\\ShoesStore\\shoesstore\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|solutionrelative:shoesstore\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|C:\\Users\\gilma\\source\\repos\\ShoesStore\\shoesstore\\editorderwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|solutionrelative:shoesstore\\editorderwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|C:\\Users\\gilma\\source\\repos\\ShoesStore\\shoesstore\\editorderwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|solutionrelative:shoesstore\\editorderwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|C:\\Users\\gilma\\source\\repos\\ShoesStore\\shoesstore\\viewmodel\\orderdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|solutionrelative:shoesstore\\viewmodel\\orderdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|C:\\Users\\gilma\\source\\repos\\ShoesStore\\shoesstore\\viewmodel\\editorderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|solutionrelative:shoesstore\\viewmodel\\editorderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|C:\\Users\\gilma\\source\\repos\\ShoesStore\\shoesstore\\model\\orderdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|solutionrelative:shoesstore\\model\\orderdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|C:\\Users\\gilma\\source\\repos\\ShoesStore\\shoesstore\\orderwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|solutionrelative:shoesstore\\orderwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|C:\\Users\\gilma\\source\\repos\\ShoesStore\\shoesstore\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|solutionrelative:shoesstore\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|C:\\Users\\gilma\\source\\repos\\ShoesStore\\shoesstore\\orderwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|solutionrelative:shoesstore\\orderwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|C:\\Users\\gilma\\source\\repos\\ShoesStore\\shoesstore\\editgood.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|solutionrelative:shoesstore\\editgood.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|C:\\Users\\gilma\\source\\repos\\ShoesStore\\shoesstore\\service\\goodservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|solutionrelative:shoesstore\\service\\goodservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|C:\\Users\\gilma\\source\\repos\\ShoesStore\\shoesstore\\viewmodel\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|solutionrelative:shoesstore\\viewmodel\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|C:\\Users\\gilma\\source\\repos\\ShoesStore\\shoesstore\\viewmodel\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|solutionrelative:shoesstore\\viewmodel\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|C:\\Users\\gilma\\source\\repos\\ShoesStore\\shoesstore\\viewmodel\\goodviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|solutionrelative:shoesstore\\viewmodel\\goodviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|C:\\Users\\gilma\\source\\repos\\ShoesStore\\shoesstore\\model\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|solutionrelative:shoesstore\\model\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|C:\\Users\\gilma\\source\\repos\\ShoesStore\\shoesstore\\model\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|solutionrelative:shoesstore\\model\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|C:\\Users\\gilma\\source\\repos\\ShoesStore\\shoesstore\\model\\manufacture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|solutionrelative:shoesstore\\model\\manufacture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|C:\\Users\\gilma\\source\\repos\\ShoesStore\\shoesstore\\model\\goodcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|solutionrelative:shoesstore\\model\\goodcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|C:\\Users\\gilma\\source\\repos\\ShoesStore\\shoesstore\\model\\good.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|solutionrelative:shoesstore\\model\\good.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|C:\\Users\\gilma\\source\\repos\\ShoesStore\\shoesstore\\editgood.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|solutionrelative:shoesstore\\editgood.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\obj\\Debug\\OrderWindow.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShoesStore\\obj\\Debug\\OrderWindow.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|C:\\Users\\gilma\\source\\repos\\ShoesStore\\shoesstore\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|solutionrelative:shoesstore\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|C:\\Users\\gilma\\source\\repos\\ShoesStore\\shoesstore\\model\\basemodel.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|solutionrelative:shoesstore\\model\\basemodel.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|C:\\Users\\gilma\\source\\repos\\ShoesStore\\shoesstore\\model\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|solutionrelative:shoesstore\\model\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|C:\\Users\\gilma\\source\\repos\\ShoesStore\\shoesstore\\model\\basemodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{DE0C7E12-4DD2-4606-8DCE-7E0451CD26F0}|ShoesStore\\ShoesStore.csproj|solutionrelative:shoesstore\\model\\basemodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 149,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EditOrderWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\EditOrderWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ShoesStore\\EditOrderWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\EditOrderWindow.xaml.cs",
+              "RelativeToolTip": "ShoesStore\\EditOrderWindow.xaml.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAADwv0QBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T20:38:18.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderDetails.cs",
+              "DocumentMoniker": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\Model\\OrderDetails.cs",
+              "RelativeDocumentMoniker": "ShoesStore\\Model\\OrderDetails.cs",
+              "ToolTip": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\Model\\OrderDetails.cs",
+              "RelativeToolTip": "ShoesStore\\Model\\OrderDetails.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAuwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T20:03:55.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EditOrderViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\ViewModel\\EditOrderViewModel.cs",
+              "RelativeDocumentMoniker": "ShoesStore\\ViewModel\\EditOrderViewModel.cs",
+              "ToolTip": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\ViewModel\\EditOrderViewModel.cs",
+              "RelativeToolTip": "ShoesStore\\ViewModel\\EditOrderViewModel.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwHIAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T17:52:57.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderDetailsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\ViewModel\\OrderDetailsViewModel.cs",
+              "RelativeDocumentMoniker": "ShoesStore\\ViewModel\\OrderDetailsViewModel.cs",
+              "ToolTip": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\ViewModel\\OrderDetailsViewModel.cs",
+              "RelativeToolTip": "ShoesStore\\ViewModel\\OrderDetailsViewModel.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAiwGMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T13:20:41.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "ShoesStore\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\MainWindow.xaml",
+              "RelativeToolTip": "ShoesStore\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-05T15:40:28.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\ProductWindow.xaml",
+              "RelativeDocumentMoniker": "ShoesStore\\ProductWindow.xaml",
+              "ToolTip": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\ProductWindow.xaml",
+              "RelativeToolTip": "ShoesStore\\ProductWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-03T20:19:18.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\packages.config",
+              "RelativeDocumentMoniker": "ShoesStore\\packages.config",
+              "ToolTip": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\packages.config",
+              "RelativeToolTip": "ShoesStore\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-12-05T18:02:54.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "BaseModel.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\Model\\BaseModel.edmx",
+              "RelativeDocumentMoniker": "ShoesStore\\Model\\BaseModel.edmx",
+              "ToolTip": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\Model\\BaseModel.edmx [Diagram1]",
+              "RelativeToolTip": "ShoesStore\\Model\\BaseModel.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-12-03T17:38:51.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\ViewModel\\UserViewModel.cs",
+              "RelativeDocumentMoniker": "ShoesStore\\ViewModel\\UserViewModel.cs",
+              "ToolTip": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\ViewModel\\UserViewModel.cs",
+              "RelativeToolTip": "ShoesStore\\ViewModel\\UserViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T15:36:15.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OrderViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\ViewModel\\OrderViewModel.cs",
+              "RelativeDocumentMoniker": "ShoesStore\\ViewModel\\OrderViewModel.cs",
+              "ToolTip": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\ViewModel\\OrderViewModel.cs",
+              "RelativeToolTip": "ShoesStore\\ViewModel\\OrderViewModel.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAADwv0AAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T13:23:18.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GoodViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\ViewModel\\GoodViewModel.cs",
+              "RelativeDocumentMoniker": "ShoesStore\\ViewModel\\GoodViewModel.cs",
+              "ToolTip": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\ViewModel\\GoodViewModel.cs",
+              "RelativeToolTip": "ShoesStore\\ViewModel\\GoodViewModel.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAADwv2QAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T20:16:58.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "OrderWindow.g.cs",
+              "DocumentMoniker": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\obj\\Debug\\OrderWindow.g.cs",
+              "RelativeDocumentMoniker": "ShoesStore\\obj\\Debug\\OrderWindow.g.cs",
+              "ToolTip": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\obj\\Debug\\OrderWindow.g.cs",
+              "RelativeToolTip": "ShoesStore\\obj\\Debug\\OrderWindow.g.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAewFEAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T20:41:51.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GoodService.cs",
+              "DocumentMoniker": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\Service\\GoodService.cs",
+              "RelativeDocumentMoniker": "ShoesStore\\Service\\GoodService.cs",
+              "ToolTip": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\Service\\GoodService.cs",
+              "RelativeToolTip": "ShoesStore\\Service\\GoodService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAA7wDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T13:33:45.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EditGood.xaml",
+              "DocumentMoniker": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\EditGood.xaml",
+              "RelativeDocumentMoniker": "ShoesStore\\EditGood.xaml",
+              "ToolTip": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\EditGood.xaml",
+              "RelativeToolTip": "ShoesStore\\EditGood.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-03T19:51:11.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\Model\\Order.cs",
+              "RelativeDocumentMoniker": "ShoesStore\\Model\\Order.cs",
+              "ToolTip": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\Model\\Order.cs",
+              "RelativeToolTip": "ShoesStore\\Model\\Order.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T18:18:07.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EditOrderWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\EditOrderWindow.xaml",
+              "RelativeDocumentMoniker": "ShoesStore\\EditOrderWindow.xaml",
+              "ToolTip": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\EditOrderWindow.xaml",
+              "RelativeToolTip": "ShoesStore\\EditOrderWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-03T19:51:16.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Good.cs",
+              "DocumentMoniker": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\Model\\Good.cs",
+              "RelativeDocumentMoniker": "ShoesStore\\Model\\Good.cs",
+              "ToolTip": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\Model\\Good.cs",
+              "RelativeToolTip": "ShoesStore\\Model\\Good.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAqwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T20:17:06.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "OrderStatus.cs",
+              "DocumentMoniker": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\Model\\OrderStatus.cs",
+              "RelativeDocumentMoniker": "ShoesStore\\Model\\OrderStatus.cs",
+              "ToolTip": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\Model\\OrderStatus.cs",
+              "RelativeToolTip": "ShoesStore\\Model\\OrderStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T20:50:46.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Manufacture.cs",
+              "DocumentMoniker": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\Model\\Manufacture.cs",
+              "RelativeDocumentMoniker": "ShoesStore\\Model\\Manufacture.cs",
+              "ToolTip": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\Model\\Manufacture.cs",
+              "RelativeToolTip": "ShoesStore\\Model\\Manufacture.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T15:35:32.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "GoodCategory.cs",
+              "DocumentMoniker": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\Model\\GoodCategory.cs",
+              "RelativeDocumentMoniker": "ShoesStore\\Model\\GoodCategory.cs",
+              "ToolTip": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\Model\\GoodCategory.cs",
+              "RelativeToolTip": "ShoesStore\\Model\\GoodCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T15:35:26.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\OrderWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ShoesStore\\OrderWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\OrderWindow.xaml.cs",
+              "RelativeToolTip": "ShoesStore\\OrderWindow.xaml.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAUwHsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T20:18:17.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrderWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\OrderWindow.xaml",
+              "RelativeDocumentMoniker": "ShoesStore\\OrderWindow.xaml",
+              "ToolTip": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\OrderWindow.xaml",
+              "RelativeToolTip": "ShoesStore\\OrderWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-05T12:57:22.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "BaseModel.Context.cs",
+              "DocumentMoniker": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\Model\\BaseModel.Context.cs",
+              "RelativeDocumentMoniker": "ShoesStore\\Model\\BaseModel.Context.cs",
+              "ToolTip": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\Model\\BaseModel.Context.cs",
+              "RelativeToolTip": "ShoesStore\\Model\\BaseModel.Context.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T18:12:28.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "BaseModel.cs",
+              "DocumentMoniker": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\Model\\BaseModel.cs",
+              "RelativeDocumentMoniker": "ShoesStore\\Model\\BaseModel.cs",
+              "ToolTip": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\Model\\BaseModel.cs",
+              "RelativeToolTip": "ShoesStore\\Model\\BaseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T18:12:26.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ShoesStore\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\MainWindow.xaml.cs",
+              "RelativeToolTip": "ShoesStore\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAhwB4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T18:12:13.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "EditGood.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\EditGood.xaml.cs",
+              "RelativeDocumentMoniker": "ShoesStore\\EditGood.xaml.cs",
+              "ToolTip": "C:\\Users\\gilma\\source\\repos\\ShoesStore\\ShoesStore\\EditGood.xaml.cs",
+              "RelativeToolTip": "ShoesStore\\EditGood.xaml.cs",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAkwBMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T20:17:49.545Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

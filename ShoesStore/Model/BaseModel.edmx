@@ -1,0 +1,635 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Хранилище shoes_storeModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Good">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Article" Type="varchar" MaxLength="255" />
+          <Property Name="Name" Type="varchar" MaxLength="255" />
+          <Property Name="UnitOfMeaserent" Type="varchar" MaxLength="255" />
+          <Property Name="Price" Type="numeric" Precision="9" Scale="2" />
+          <Property Name="Discount" Type="int" />
+          <Property Name="CountInStorage" Type="int" />
+          <Property Name="Description" Type="varchar" MaxLength="255" />
+          <Property Name="GoodCategoryId" Type="int" />
+          <Property Name="SupplierId" Type="int" />
+          <Property Name="ManufactureId" Type="int" />
+          <Property Name="PicturePass" Type="varchar" MaxLength="255" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GoodCategory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Manufacture">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Number" Type="int" />
+          <Property Name="Date" Type="date" />
+          <Property Name="PickUpPointAddress" Type="varchar" MaxLength="50" />
+          <Property Name="ReceiptCode" Type="varchar" MaxLength="255" />
+          <Property Name="OrderStatusId" Type="int" />
+          <Property Name="ClientId" Type="int" />
+          <Property Name="DeliveryDate" Type="date" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OrderDetails">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="GoodId" Type="int" />
+          <Property Name="Quantity" Type="int" />
+          <Property Name="OrderId" Type="int" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="OrderStatus">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="PickUpPoint">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Index" Type="varchar" MaxLength="255" />
+          <Property Name="City" Type="varchar" MaxLength="250" />
+          <Property Name="Street" Type="varchar" MaxLength="50" />
+          <Property Name="Number" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Role">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Supplier">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Surname" Type="varchar" MaxLength="255" />
+          <Property Name="Name" Type="varchar" MaxLength="255" />
+          <Property Name="Patronymic" Type="varchar" MaxLength="255" />
+          <Property Name="Login" Type="varchar" MaxLength="255" />
+          <Property Name="Password" Type="varchar" MaxLength="255" />
+          <Property Name="RoleId" Type="int" />
+        </EntityType>
+        <Association Name="FK_Client_Id">
+          <End Role="User" Type="Self.User" Multiplicity="0..1" />
+          <End Role="Order" Type="Self.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="ClientId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Good_Category_Id">
+          <End Role="GoodCategory" Type="Self.GoodCategory" Multiplicity="0..1" />
+          <End Role="Good" Type="Self.Good" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoodCategory">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Good">
+              <PropertyRef Name="GoodCategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Manufacture_Id">
+          <End Role="Manufacture" Type="Self.Manufacture" Multiplicity="0..1" />
+          <End Role="Good" Type="Self.Good" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Manufacture">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Good">
+              <PropertyRef Name="ManufactureId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ORDER">
+          <End Role="Order" Type="Self.Order" Multiplicity="0..1" />
+          <End Role="OrderDetails" Type="Self.OrderDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Order">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="OrderDetails">
+              <PropertyRef Name="OrderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Order_Status_Id">
+          <End Role="OrderStatus" Type="Self.OrderStatus" Multiplicity="0..1" />
+          <End Role="Order" Type="Self.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OrderStatus">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="OrderStatusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderDetails_Good">
+          <End Role="Good" Type="Self.Good" Multiplicity="0..1" />
+          <End Role="OrderDetails" Type="Self.OrderDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Good">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="OrderDetails">
+              <PropertyRef Name="GoodId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Role_Id">
+          <End Role="Role" Type="Self.Role" Multiplicity="0..1" />
+          <End Role="User" Type="Self.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Role">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Supplier_Id">
+          <End Role="Supplier" Type="Self.Supplier" Multiplicity="0..1" />
+          <End Role="Good" Type="Self.Good" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Supplier">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Good">
+              <PropertyRef Name="SupplierId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Хранилище shoes_storeModelContainer">
+          <EntitySet Name="Good" EntityType="Self.Good" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GoodCategory" EntityType="Self.GoodCategory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Manufacture" EntityType="Self.Manufacture" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Order" EntityType="Self.Order" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OrderDetails" EntityType="Self.OrderDetails" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OrderStatus" EntityType="Self.OrderStatus" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PickUpPoint" EntityType="Self.PickUpPoint" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Supplier" EntityType="Self.Supplier" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Client_Id" Association="Self.FK_Client_Id">
+            <End Role="User" EntitySet="User" />
+            <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Good_Category_Id" Association="Self.FK_Good_Category_Id">
+            <End Role="GoodCategory" EntitySet="GoodCategory" />
+            <End Role="Good" EntitySet="Good" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Manufacture_Id" Association="Self.FK_Manufacture_Id">
+            <End Role="Manufacture" EntitySet="Manufacture" />
+            <End Role="Good" EntitySet="Good" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ORDER" Association="Self.FK_ORDER">
+            <End Role="Order" EntitySet="Order" />
+            <End Role="OrderDetails" EntitySet="OrderDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Order_Status_Id" Association="Self.FK_Order_Status_Id">
+            <End Role="OrderStatus" EntitySet="OrderStatus" />
+            <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderDetails_Good" Association="Self.FK_OrderDetails_Good">
+            <End Role="Good" EntitySet="Good" />
+            <End Role="OrderDetails" EntitySet="OrderDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Role_Id" Association="Self.FK_Role_Id">
+            <End Role="Role" EntitySet="Role" />
+            <End Role="User" EntitySet="User" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Supplier_Id" Association="Self.FK_Supplier_Id">
+            <End Role="Supplier" EntitySet="Supplier" />
+            <End Role="Good" EntitySet="Good" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="shoes_storeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Good">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Article" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="UnitOfMeaserent" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Price" Type="Decimal" Precision="9" Scale="2" />
+          <Property Name="Discount" Type="Int32" />
+          <Property Name="CountInStorage" Type="Int32" />
+          <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="GoodCategoryId" Type="Int32" />
+          <Property Name="SupplierId" Type="Int32" />
+          <Property Name="ManufactureId" Type="Int32" />
+          <Property Name="PicturePass" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="GoodCategory" Relationship="Self.FK_Good_Category_Id" FromRole="Good" ToRole="GoodCategory" />
+          <NavigationProperty Name="OrderDetails" Relationship="Self.FK_Good_Id" FromRole="Good" ToRole="OrderDetails" />
+          <NavigationProperty Name="Manufacture" Relationship="Self.FK_Manufacture_Id" FromRole="Good" ToRole="Manufacture" />
+          <NavigationProperty Name="Supplier" Relationship="Self.FK_Supplier_Id" FromRole="Good" ToRole="Supplier" />
+        </EntityType>
+        <EntityType Name="GoodCategory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Good" Relationship="Self.FK_Good_Category_Id" FromRole="GoodCategory" ToRole="Good" />
+        </EntityType>
+        <EntityType Name="Manufacture">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Good" Relationship="Self.FK_Manufacture_Id" FromRole="Manufacture" ToRole="Good" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Number" Type="Int32" />
+          <Property Name="Date" Type="DateTime" Precision="0" />
+          <Property Name="PickUpPointAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ReceiptCode" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="OrderStatusId" Type="Int32" />
+          <Property Name="ClientId" Type="Int32" />
+          <Property Name="DeliveryDate" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="User" Relationship="Self.FK_Client_Id" FromRole="Order" ToRole="User" />
+          <NavigationProperty Name="OrderDetails" Relationship="Self.FK_Order_Id" FromRole="Order" ToRole="OrderDetails" />
+          <NavigationProperty Name="OrderStatus" Relationship="Self.FK_Order_Status_Id" FromRole="Order" ToRole="OrderStatus" />
+        </EntityType>
+        <EntityType Name="OrderDetails">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="GoodId" Type="Int32" />
+          <Property Name="Quantity" Type="Int32" />
+          <Property Name="OrderId" Type="Int32" />
+          <NavigationProperty Name="Good" Relationship="Self.FK_Good_Id" FromRole="OrderDetails" ToRole="Good" />
+          <NavigationProperty Name="Order" Relationship="Self.FK_Order_Id" FromRole="OrderDetails" ToRole="Order" />
+        </EntityType>
+        <EntityType Name="OrderStatus">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Order" Relationship="Self.FK_Order_Status_Id" FromRole="OrderStatus" ToRole="Order" />
+        </EntityType>
+        <EntityType Name="PickUpPoint">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Index" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="City" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Street" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Role">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="User" Relationship="Self.FK_Role_Id" FromRole="Role" ToRole="User" />
+        </EntityType>
+        <EntityType Name="Supplier">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Good" Relationship="Self.FK_Supplier_Id" FromRole="Supplier" ToRole="Good" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Surname" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Patronymic" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Login" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="RoleId" Type="Int32" />
+          <NavigationProperty Name="Order" Relationship="Self.FK_Client_Id" FromRole="User" ToRole="Order" />
+          <NavigationProperty Name="Role" Relationship="Self.FK_Role_Id" FromRole="User" ToRole="Role" />
+        </EntityType>
+        <Association Name="FK_Good_Category_Id">
+          <End Role="GoodCategory" Type="Self.GoodCategory" Multiplicity="0..1" />
+          <End Role="Good" Type="Self.Good" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoodCategory">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Good">
+              <PropertyRef Name="GoodCategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Good_Id">
+          <End Role="Good" Type="Self.Good" Multiplicity="0..1" />
+          <End Role="OrderDetails" Type="Self.OrderDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Good">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="OrderDetails">
+              <PropertyRef Name="GoodId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Manufacture_Id">
+          <End Role="Manufacture" Type="Self.Manufacture" Multiplicity="0..1" />
+          <End Role="Good" Type="Self.Good" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Manufacture">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Good">
+              <PropertyRef Name="ManufactureId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Supplier_Id">
+          <End Role="Supplier" Type="Self.Supplier" Multiplicity="0..1" />
+          <End Role="Good" Type="Self.Good" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Supplier">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Good">
+              <PropertyRef Name="SupplierId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Client_Id">
+          <End Role="User" Type="Self.User" Multiplicity="0..1" />
+          <End Role="Order" Type="Self.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="ClientId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Order_Id">
+          <End Role="Order" Type="Self.Order" Multiplicity="0..1" />
+          <End Role="OrderDetails" Type="Self.OrderDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Order">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="OrderDetails">
+              <PropertyRef Name="OrderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Order_Status_Id">
+          <End Role="OrderStatus" Type="Self.OrderStatus" Multiplicity="0..1" />
+          <End Role="Order" Type="Self.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OrderStatus">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="OrderStatusId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Role_Id">
+          <End Role="Role" Type="Self.Role" Multiplicity="0..1" />
+          <End Role="User" Type="Self.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Role">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ShoesStore" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Good" EntityType="Self.Good" />
+          <EntitySet Name="GoodCategory" EntityType="Self.GoodCategory" />
+          <EntitySet Name="Manufacture" EntityType="Self.Manufacture" />
+          <EntitySet Name="Order" EntityType="Self.Order" />
+          <EntitySet Name="OrderDetails" EntityType="Self.OrderDetails" />
+          <EntitySet Name="OrderStatus" EntityType="Self.OrderStatus" />
+          <EntitySet Name="PickUpPoint" EntityType="Self.PickUpPoint" />
+          <EntitySet Name="Role" EntityType="Self.Role" />
+          <EntitySet Name="Supplier" EntityType="Self.Supplier" />
+          <EntitySet Name="User" EntityType="Self.User" />
+          <AssociationSet Name="FK_Good_Category_Id" Association="Self.FK_Good_Category_Id">
+            <End Role="GoodCategory" EntitySet="GoodCategory" />
+            <End Role="Good" EntitySet="Good" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Good_Id" Association="Self.FK_Good_Id">
+            <End Role="Good" EntitySet="Good" />
+            <End Role="OrderDetails" EntitySet="OrderDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Manufacture_Id" Association="Self.FK_Manufacture_Id">
+            <End Role="Manufacture" EntitySet="Manufacture" />
+            <End Role="Good" EntitySet="Good" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Supplier_Id" Association="Self.FK_Supplier_Id">
+            <End Role="Supplier" EntitySet="Supplier" />
+            <End Role="Good" EntitySet="Good" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Client_Id" Association="Self.FK_Client_Id">
+            <End Role="User" EntitySet="User" />
+            <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Order_Id" Association="Self.FK_Order_Id">
+            <End Role="Order" EntitySet="Order" />
+            <End Role="OrderDetails" EntitySet="OrderDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Order_Status_Id" Association="Self.FK_Order_Status_Id">
+            <End Role="OrderStatus" EntitySet="OrderStatus" />
+            <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Role_Id" Association="Self.FK_Role_Id">
+            <End Role="Role" EntitySet="Role" />
+            <End Role="User" EntitySet="User" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище shoes_storeModelContainer" CdmEntityContainer="ShoesStore">
+          <EntitySetMapping Name="Good">
+            <EntityTypeMapping TypeName="shoes_storeModel.Good">
+              <MappingFragment StoreEntitySet="Good">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Article" ColumnName="Article" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="UnitOfMeaserent" ColumnName="UnitOfMeaserent" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Discount" ColumnName="Discount" />
+                <ScalarProperty Name="CountInStorage" ColumnName="CountInStorage" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="GoodCategoryId" ColumnName="GoodCategoryId" />
+                <ScalarProperty Name="SupplierId" ColumnName="SupplierId" />
+                <ScalarProperty Name="ManufactureId" ColumnName="ManufactureId" />
+                <ScalarProperty Name="PicturePass" ColumnName="PicturePass" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GoodCategory">
+            <EntityTypeMapping TypeName="shoes_storeModel.GoodCategory">
+              <MappingFragment StoreEntitySet="GoodCategory">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Manufacture">
+            <EntityTypeMapping TypeName="shoes_storeModel.Manufacture">
+              <MappingFragment StoreEntitySet="Manufacture">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Order">
+            <EntityTypeMapping TypeName="shoes_storeModel.Order">
+              <MappingFragment StoreEntitySet="Order">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Number" ColumnName="Number" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="PickUpPointAddress" ColumnName="PickUpPointAddress" />
+                <ScalarProperty Name="ReceiptCode" ColumnName="ReceiptCode" />
+                <ScalarProperty Name="OrderStatusId" ColumnName="OrderStatusId" />
+                <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+                <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OrderDetails">
+            <EntityTypeMapping TypeName="shoes_storeModel.OrderDetails">
+              <MappingFragment StoreEntitySet="OrderDetails">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="GoodId" ColumnName="GoodId" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OrderStatus">
+            <EntityTypeMapping TypeName="shoes_storeModel.OrderStatus">
+              <MappingFragment StoreEntitySet="OrderStatus">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PickUpPoint">
+            <EntityTypeMapping TypeName="shoes_storeModel.PickUpPoint">
+              <MappingFragment StoreEntitySet="PickUpPoint">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Index" ColumnName="Index" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Street" ColumnName="Street" />
+                <ScalarProperty Name="Number" ColumnName="Number" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Role">
+            <EntityTypeMapping TypeName="shoes_storeModel.Role">
+              <MappingFragment StoreEntitySet="Role">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Supplier">
+            <EntityTypeMapping TypeName="shoes_storeModel.Supplier">
+              <MappingFragment StoreEntitySet="Supplier">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="User">
+            <EntityTypeMapping TypeName="shoes_storeModel.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Surname" ColumnName="Surname" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Patronymic" ColumnName="Patronymic" />
+                <ScalarProperty Name="Login" ColumnName="Login" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
